@@ -1,0 +1,14 @@
+/* příklad
+@mixin grid($columns-number, $gap-size: 20px){
+    display: grid;
+    grid-template-columns: repeat($columns-number, 1fr);
+    gap: $gap-size;
+}
+*/
+
+
+@mixin medium {
+    @media screen and (min-width: 768px) {
+        @content; 
+    }
+}

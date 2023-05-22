@@ -1,0 +1,36 @@
+@use "../utils/variables";
+
+
+
+.info-text{
+    overflow: auto;
+    margin:20px;
+
+    &__title{
+        text-align: center;
+        font-size: variables.$font-size__h3;
+
+        &--left{
+            text-align: left;
+        }
+    }
+
+    &__picture{
+        width: 200px;
+        border-radius: 30%;
+        margin: 15px;
+        float: right;
+        box-shadow: 1px 1px 10px grey;
+
+        &--left{
+            float: left;
+        }
+    }
+
+    &__text{
+        &--center{
+        text-align: center;
+        }    
+    }
+    
+}

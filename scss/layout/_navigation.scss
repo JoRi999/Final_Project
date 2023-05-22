@@ -1,0 +1,81 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.menu{
+    text-align: end;
+    display: block;
+    background-color: variables.$primary-color;
+    font-size: variables.$font-size__h3;
+
+    &__checkbox {
+        position: absolute;
+        left: -9999px;
+
+        &:checked ~ .menu__list{
+            display: block;
+        }
+    }
+    
+    &__list {
+        display: none;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: variables.$primary-color;
+        }
+    
+    &__item {
+        font-size: variables.$font-size__h4;
+        border-bottom: 1px solid variables.$background-color__primary;
+        text-align: center;
+
+        &--first{
+            border-top: 1px solid variables.$background-color__primary;
+        }
+
+    }
+
+    &__link {
+        display: block;
+        padding: 10px;
+        color: variables.$font-color;
+        text-decoration: none;
+        &:hover, 
+        &:focus {
+            background-color: variables.$primary-color;
+        }   
+    }
+    &--secondary{
+        font-size: variables.$font-size__h4;
+
+    }
+
+    &__list--secondary{
+        background-color: yellow;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__toggler{
+        display: block;
+        text-align: center;
+        font-size: variables.$font-size__h3;
+    }
+
+}
+
+@include mixins.medium {
+    .menu__toggler{
+        display: none;
+    }
+
+    .menu__list{
+        display: flex !important;
+    }
+
+    .menu__item {   
+        border-bottom: 0;
+        border-right:1px solid white ;
+    }
+}
+

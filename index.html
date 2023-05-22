@@ -1,14 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <p>slovo</p>
-    <img src="images/joke coding.jpg" alt="">
-</body>
-</html>
+---
+layout: layouts/main.njk
+title: Citliví sobě
+---
+
+<div class="info-text">
+
+    <h2 class="info-text__title">Kdo je vysoce citlivý?</h2> 
+
+    <img class="info-text__picture" src="images/banner.jpg" alt="">
+
+    <p class="info-text__text">Vysoce citliví lidé mají jedinečnou schopnost vnímat a zpracovávat podněty ve svém okolí na hlubší úrovni než běžně citliví jedinci. Jsou obvykle citlivější na emocionální vjemy, jako jsou radost, smutek nebo napětí, a mohou prožívat tyto emoce intenzivněji. Navíc mají větší senzitivitu ke stimulům prostředí, jako jsou hlučné prostředí, jasné světlo nebo vůně. Tato vysoká citlivost jim umožňuje vnímat jemné nuance a detaily, které jiní lidé mohou přehlédnout. 
+        
+    <p class="info-text__text">
+    Vysoce citliví lidé také často projevují výraznou empatii a soucit ke druhým. Jsou schopni intuitivně rozpoznat a pochopit potřeby a emoce ostatních lidí. Tato schopnost jim umožňuje být skvělými posluchači a podporou pro své blízké. Nicméně, vzhledem k jejich vysoké citlivosti mohou vysoce citliví jedinci také snadno přetěžovat své emoce a potřebují vyčlenit čas a prostor pro zotavení a regeneraci.</p>
+
+</div>
+
+<div class="section-divider">
+</div>
+
+<div class="info-text">
+
+    <h2 class="info-text__title">Proč a pro koho vzniknul tento web?</h2> 
+
+    <img class="info-text__picture info-text__picture--left" src="images/banner.jpg" alt="">
+
+    <p class="info-text__text">Pro všechny, kdo chtějí citlivě komunitně žít.</p>
+
+    <p class="info-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error totam laudantium at quaerat natus necessitatibus praesentium nihil optio sapiente impedit rem iure, fuga deleniti quam quidem nesciunt tempora esse nisi.</p>
+ 
+</div>
+
+<div class="section-divider">
+</div>
+
+<!--TADY JSEM SKONČILA - PROČ JE TU SEKCE INFO TEXT?-->
+<div class="info-text"> 
+
+    <h2 class="info-text__title">Napište nám</h2>
+
+    <p class="info-text__text info-text__text--center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sed harum reiciendis aut blanditiis vero iure placeat excepturi fugit. Quasi perferendis sit atque corrupti earum dignissimos similique, modi laborum! Assumenda!</p>
+
+</div>
+
+    <div class=""></div>
+
+        <form class="form form--main" method="get" action="...">
+
+            <div class="form__form-field">
+                <label class="form__label" for="name">Jméno<span class="required">*</span></label>
+                    <input class="form__input"
+                        type="text" 
+                        name="name" 
+                        id="name" 
+                        maxlength="30" 
+                    >
+            </div>
+
+            <div class="form__form-field">
+                <label class="form__label" for="subject">Předmět</label>
+                <input class="form__input"
+                    type="text" 
+                    name="subject" 
+                    id="subject" 
+                    maxlength="50" 
+                >
+            </div>
+
+
+            <div class="form__form-field">
+                <label class="form__label" for="textarea">Zpráva<span class="required">*</span></label>
+                <textarea class="form__input"
+                    name="" 
+                    id="textarea" 
+                    cols="40" 
+                    rows="10"
+                    maxlength="1000">
+                </textarea>
+            </div>
+
+            <button class="form__button" type="submit" name="submit">Odeslat</button>
+        
+
+        </form>
+
+        <div class="image--big">
+        <img class="image__photo" src="/images/sea.jpg" alt="sea_view">
+        </div>
+

@@ -1,0 +1,26 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+
+.form{
+    text-align: center;
+
+    &__form-field{
+        margin-bottom: 20px;
+    }
+
+    &__label{
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    &__input{
+        background-color: rgba(53, 167, 255, .3);
+    }
+
+    @include mixins.medium {
+        text-align: left;
+ }
+
+ 
+}

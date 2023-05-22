@@ -1,0 +1,17 @@
+@use "../utils/variables";
+
+.header{
+    margin: 30px;
+
+    &__title{
+        text-align: center;
+        color: variables.$primary-color;
+        font-size: variables.$font-size__h1;
+    }
+
+    &__subtitle{
+        font-size: variables.$font-size__default;
+        font-weight: normal;
+        text-align: center;
+    }
+}

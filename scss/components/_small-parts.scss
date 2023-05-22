@@ -1,0 +1,10 @@
+@use "../utils/variables";
+
+.section-divider{
+    border-top: 8px solid variables.$primary-color;
+    border-radius: 5px;
+    display: block;
+    width: 500px;
+    margin: auto;
+}
+

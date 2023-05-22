@@ -1,0 +1,22 @@
+@use "utils/mixins";
+@use "utils/variables";
+
+@use "layout/navigation";
+@use "layout/footer";
+@use "layout/forms";
+@use "layout/header";
+@use "layout/base";
+
+
+@use "components/blocks";
+@use "components/buttons";
+@use "components/small-parts";
+
+
+body{
+    font-family: variables.$font-special;
+    font-size: variables.$font-size__default;
+    background-color: variables.$background-color__primary;
+    color: variables.$font-color;
+}
+

@@ -1,0 +1,11 @@
+@use "../utils/variables";
+
+.footer{
+    display: block;
+    font-size: variables.$font-size__small;
+    text-align: center;
+    background-color: variables.$secondary-color;
+    padding: 10px 0;
+}
+
+

@@ -1,0 +1,12 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+
+.form__button{
+    width: 100px;    
+    height: 50px;
+    color: variables.$font-color;
+    background-color: variables.$primary-color;
+    border-radius: 5px;
+}
+

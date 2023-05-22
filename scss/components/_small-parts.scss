@@ -1,10 +1,17 @@
 @use "../utils/variables";
 
 .section-divider{
-    border-top: 8px solid variables.$primary-color;
+    display: flex;
+
+    &__line{
     border-radius: 5px;
-    display: block;
-    width: 500px;
+    max-width: 500px;
+    height: 8px;
+    background-color: variables.$primary-color;
+    flex: 0 1 60%;
+    justify-content: center;
     margin: auto;
+    }
 }
+
 

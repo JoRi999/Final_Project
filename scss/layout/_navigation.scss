@@ -6,6 +6,7 @@
     display: block;
     background-color: variables.$primary-color;
     font-size: variables.$font-size__h3;
+    
 
     &__checkbox {
         position: absolute;
@@ -41,19 +42,45 @@
         color: variables.$font-color;
         text-decoration: none;
         &:hover, 
-        &:focus {
-            background-color: variables.$primary-color;
+        &:focus,
+        &:active {
+            background-color: variables.$primary-color--lighter;
         }   
     }
-    &--secondary{
-        font-size: variables.$font-size__h4;
 
+    &--secondary{
+        margin: variables.$margin__component;
     }
 
     &__list--secondary{
-        background-color: yellow;
+        background-color: variables.$background-color__primary;
         display: flex;
         flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    &__item--secondary{
+        background-color: variables.$secondary-color;
+        border-radius: 5px;
+        padding: 5px 15px 5px 15px;
+        &:hover, 
+        &:focus,
+        &:active {
+            background-color: variables.$primary-color--lighter;
+        }   
+    }
+    &__item--knihy{
+        background-color: variables.$primary-color--lighter;
+    }
+
+
+    &__link--secondary{
+        font-size: variables.$font-size__h4;
+        color: variables.$font-color;
+
+   
+ 
     }
 
     &__toggler{

@@ -1,12 +1,13 @@
 @use "../utils/variables";
-
+@use "../utils/mixins";
 
 
 .info-text{
     overflow: auto;
-    margin:20px;
+    margin: variables.$margin__component;
 
     &__title{
+       
         text-align: center;
         font-size: variables.$font-size__h3;
 
@@ -16,7 +17,7 @@
     }
 
     &__picture{
-        width: 200px;
+        max-width: 150px;
         border-radius: 30%;
         margin: 15px;
         float: right;
@@ -33,4 +34,39 @@
         }    
     }
     
+    @include mixins.medium {
+        &--flex{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        align-items: stretch;
+        margin: variables.$margin__component;
+        }
+
+        &__title{
+            flex-basis: 100%;
+        }
+
+        &__picture{
+            display: flex;
+            max-width: 200px;
+            flex: 1 0 60%;
+            object-fit: cover;
+
+
+            &--left{
+                display: flex;
+                max-width: 200px;
+                flex: 0 1 50%;
+                order: 1;
+                object-fit: cover;
+            }
+        }
+
+        &__text{
+            flex: 1 0 30%; 
+
+        }
+    }
 }

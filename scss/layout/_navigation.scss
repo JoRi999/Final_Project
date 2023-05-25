@@ -30,10 +30,6 @@
         border-bottom: 1px solid variables.$background-color__primary;
         text-align: center;
 
-        &--first{
-            border-top: 1px solid variables.$background-color__primary;
-        }
-
     }
 
     &__link {
@@ -63,7 +59,7 @@
     &__item--secondary{
         background-color: variables.$secondary-color;
         border-radius: 5px;
-        padding: 5px 15px 5px 15px;
+        // padding: 5px 15px 5px 15px;
         &:hover, 
         &:focus,
         &:active {
@@ -91,7 +87,7 @@
 
 }
 
-@include mixins.medium {
+@include mixins.big {
     .menu__toggler{
         display: none;
     }
@@ -102,7 +98,37 @@
 
     .menu__item {   
         border-bottom: 0;
-        border-right:1px solid white ;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-right: 1px solid variables.$background-color__primary;
+        &:hover, 
+        &:focus,
+        &:active {
+            background-color: variables.$primary-color--lighter;
+        }   
+    }
+
+
+    .menu__list--secondary{
+        gap: 0;
+        justify-content: flex-start;
+    }
+
+    .menu__item--secondary{
+        flex: 1 0 auto;
+        border-radius: 0;
+        border: 0;
     }
 }
 
+
+
+// MENU - KOMUNITA
+
+.menu__item--one{
+    background-color: variables.$secondary-color;
+}
+
+.menu__item--two{
+    background-color: variables.$primary-color--lighter;
+}

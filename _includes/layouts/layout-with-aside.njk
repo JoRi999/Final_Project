@@ -1,0 +1,20 @@
+---
+layout: layouts/main-template.njk
+---
+
+    {% include "partials/info-text.njk" %}  
+    {% include "partials/secondary-menu.njk" %}  
+      
+
+    <div class="main-aside">
+        
+        <main class="main main-aside__main">
+            
+            {{content | safe }}
+
+            
+        </main>
+
+        {% include "partials/aside.njk" %}
+
+    </div>

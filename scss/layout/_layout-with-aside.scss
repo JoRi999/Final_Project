@@ -1,0 +1,34 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.main-aside{
+    display: block;
+
+    &__aside{
+        display: none;
+    }
+}
+
+@include mixins.medium {
+    .main-aside{
+        margin: variables.$margin__component;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-aside__main{
+        flex: 1 0 70%;
+        max-width: 1000px;
+    }
+
+    .main-aside__aside{
+        display: flex;
+        flex: 0 1 30%;
+        padding: 30px 30px 30px 30px;
+        max-width: 400px;
+    }
+
+    .aside__image{
+        max-width: 100px;
+    }
+}

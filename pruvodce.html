@@ -1,9 +1,247 @@
 ---
-layout: layouts/main_with_aside.njk
+layout: /layouts/main-template.njk
 title: Pruvodce
 ---
 
 
-<p>
-    Tady je pruvodce.
-</p>
+
+<div class="info-text">
+    
+    <h2 class="info-text__title info-text__title--left">Citlivě ve městě</h2> 
+
+    <div class="info-text__text">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem quae rerum, vero earum similique laboriosam voluptatem ea ipsam itaque temporibus recusandae nihil dolor velit reprehenderit ducimus nisi pariatur natus minus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quam iusto deserunt atque quae vero ea impedit alias obcaecati explicabo! Voluptas soluta alias ut quos praesentium mollitia aut ex ratione.</p>
+    </div>  
+
+</div>
+
+<div class="section-divider">
+
+    <div class="section-divider__line"></div>
+
+</div>
+
+<div class="page-content">
+    <div class="review-section">
+        <h3 class="review-section__title">Přehled útočišť</h3>
+        <p>Prozkoumejte kavárny ve vašem městě// Najděte kavárnu, kterou zvažujete, a zjistěte, jaké dostala hodnocení od ostatních, případně ohodnoťte návštěvu v nějaké kavárně.</p>
+        <p>Zadejte místo, kde se nacházíte a najděte nejbližší sympatický podnik.</p>
+
+        <div class="button-group review-section__button-group">
+
+            <button class="button--primary button-group__button review-section__button--one" type="submit" name="submit">Přidat kavárnu</button>
+
+            <div class="search-box review-section__search-box--one">
+                <div class="row">
+                    <input class="input-field--search" type="text"
+                    id="input-box"
+                    placeholder="Zadejte město, ulici..."
+                    autocomplete="off">
+                    <button class="button--search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="review-section__results-info">Výsledky vyhledávání (Brno):</p>
+
+        <div class="section-divider">
+
+            <div class="section-divider__line--tertiary"></div>
+        
+        </div>
+
+        <div class="review">
+
+            <div class="review__head">
+                <h4 class="review__place-name">Spolek</h4>
+                
+
+                <div class="items-list__rating">
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-regular fa-star items-list__star"></i>
+                    <p class="items-list__review-number">(16 hodnocení)</p>
+                </div>
+
+            </div>
+
+            <p class="review__place-address">Orlí 517/22, Brno</p>
+
+        
+
+            
+            <p> <u> Poslední recenze:</u></p>
+
+            <div class="review__body">
+
+                <p class="review__body--name">Asja999</p>
+                <div class="items-list__rating--secondary">
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <p class="items-list__review-time">(Před 5 měsíci)</p>
+                </div>
+
+                <p class="review__body--content">“Klidné, tiché místo s tlumeným světlem a spoustou míst, kam se zašít. Zmatená servírka, kterou máte chuť po šichtě doprovodit na tramvaj, aby trefila.”</p>
+
+                <div class="number-of-likes">
+
+                    <i class="fa-solid fa-thumbs-up number-of-likes__icon"></i>
+                    <p class="number-of-likes__number">2</p>
+                
+                </div>
+
+                <div class="section-divider">
+
+                    <div class="section-divider__line--tertiary"></div>
+                
+                </div>
+
+
+            </div>
+
+            <div class="review__end">
+                <a href="" class="read-more">Zobrazit více recenzí...</a>
+
+
+                <button class="button--secondary">Přidat recenzi</button>
+            </div>
+
+        </div>
+
+
+
+        <div class="review">
+
+            <div class="review__head">
+                <h4 class="review__place-name">JAGA</h4>
+                
+
+                <div class="items-list__rating">
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-regular fa-star items-list__star"></i>
+                    <p class="items-list__review-number">(8 hodnocení)</p>
+                </div>
+
+            </div>
+
+            <p class="review__place-address">Žerotínovo nám. 533/6, Brno</p>
+
+        
+
+            
+            <p> <u> Poslední recenze:</u></p>
+
+            <div class="review__body">
+
+                <p class="review__body--name">Ilja_Muromec</p>
+                <div class="items-list__rating--secondary">
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-regular fa-star items-list__star"></i>
+                    <p class="items-list__review-time">(Před 2 měsíci)</p>
+                </div>
+
+                <p class="review__body--content">“Skvělé místo, kam zajít na kafe, když chcete mít aspoň chvíli klid. Nehraje tu žádná hudba, boží!”</p>
+
+                <div class="number-of-likes">
+
+                    <i class="fa-solid fa-thumbs-up number-of-likes__icon"></i>
+                    <p class="number-of-likes__number">3</p>
+                
+                </div>
+
+                <div class="section-divider">
+
+                    <div class="section-divider__line--tertiary"></div>
+                
+                </div>
+
+
+            </div>
+
+            <div class="review__end">
+                <a href="" class="read-more">Zobrazit více recenzí...</a>
+
+
+                <button class="button--secondary">Přidat recenzi</button>
+            </div>
+
+        </div>
+
+        <div class="review">
+
+            <div class="review__head">
+                <h4 class="review__place-name">Dobrá čajovna</h4>
+                
+
+                <div class="items-list__rating">
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-regular fa-star items-list__star"></i>
+                    <i class="fa-regular fa-star items-list__star"></i>
+                    <p class="items-list__review-number">(3 hodnocení)</p>
+                </div>
+
+            </div>
+
+            <p class="review__place-address">Františkánská 502, Brno</p>
+            
+            <p> <u> Poslední recenze:</u></p>
+
+            <div class="review__body">
+
+                <p class="review__body--name">Bratr Ilji_Muromce</p>
+                <div class="items-list__rating--secondary">
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-solid fa-star items-list__star"></i>
+                    <i class="fa-regular fa-star items-list__star"></i>
+                    <i class="fa-regular fa-star items-list__star"></i>
+                    <i class="fa-regular fa-star items-list__star"></i>
+                    <p class="items-list__review-time">(Před 6 měsíci)</p>
+                </div>
+
+                <p class="review__body--content">“Byl jsem tu večer s dvěma dalšími kamarády. Vydýchaný vzduch, nepohodlné sezení, hlasitá šamanská hudba, tlumené světlo - jakože hodně! tlumené, málem jsem se při odchodu zabil.”</p>
+
+                <div class="number-of-likes">
+
+                    <i class="fa-solid fa-thumbs-up number-of-likes__icon"></i>
+                    <p class="number-of-likes__number">5</p>
+                
+                </div>
+
+                <div class="section-divider">
+
+                    <div class="section-divider__line--tertiary"></div>
+                
+                </div>
+
+
+            </div>
+
+            <div class="review__end">
+                <a href="" class="read-more">Zobrazit více recenzí...</a>
+
+
+                <button class="button--secondary">Přidat recenzi</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <img src="/images/brno-map.PNG" alt="Mapa centra Brna" class="page-content__map">
+
+</div>

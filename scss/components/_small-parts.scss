@@ -1,4 +1,9 @@
 @use "../utils/variables";
+@use "../utils/mixins";
+
+
+
+// SECTION DIVIDER
 
 .section-divider{
     display: flex;
@@ -11,7 +16,87 @@
     flex: 0 1 60%;
     justify-content: center;
     margin: auto;
+
+        &--secondary{
+        background-color: variables.$secondary-color;
+        border-radius: 5px;
+        max-width: 900px;
+        height: 2px;
+        margin: auto;
+        flex: 0 1 70%;
+        }
+
+        &--tertiary{
+        background-color: variables.$secondary-color;
+        border-radius: 5px;
+        max-width: 900px;
+        height: 2px;
+        margin: 5px 0 10px 0;
+        flex-basis: 100%;
+        }
     }
 }
 
+// BUTTONS 
 
+.form__button{
+    width: 100px;    
+    height: 50px;
+    color: variables.$font-color;
+    background-color: variables.$primary-color;
+    border-radius: 5px;
+}
+
+.button--primary{
+    height: 40px;
+    width: 200px;
+    font-size: variables.$font-size__default;
+    padding: 10px 20px;
+    background-color: variables.$primary-color;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button--secondary{
+    height: 30px;
+    width: 130px;
+    font-size: variables.$font-size__default / 1.2;
+    padding: 5px 5px;
+    background-color: variables.$primary-color--lighter;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button--tertiary{
+    width: 280px;
+}
+
+// STARS
+
+.fa-solid{
+    width:10px;
+    font-size: 16px;
+    color: variables.$font-color;
+    cursor: pointer;
+}
+
+.fa-regular{
+    width:10px;
+    font-size: 16px;
+    color: variables.$font-color;
+    cursor: pointer;
+}
+
+
+// READ MORE
+
+.read-more{
+    text-decoration: none;
+    color: variables.$primary-color;
+    display: inline-block;
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+    }
+
+}

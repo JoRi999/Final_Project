@@ -4,9 +4,16 @@
     display: block;
     font-size: variables.$font-size__small;
     text-align: center;
-    background-color: variables.$secondary-color;
+    background-color: variables.$background-color__body;
     padding: 10px 0;
     margin: 20px 0px 0px 0px;
 }
 
+.list-of-pictures{
+    margin: variables.$margin__component;
+}
+
+.h4{
+    font-size: variables.$font-size__h4;
+}
 

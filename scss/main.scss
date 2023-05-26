@@ -14,12 +14,21 @@
 
 
 body{
-    font-family: variables.$font-special;
+    font-family: variables.$font-base;
     font-size: variables.$font-size__default;
-    background-color: variables.$background-color__primary;
+    background-color: variables.$background-color__body;
     color: variables.$font-color;
-    line-height: 1.8;
+    line-height: 1.7;
     padding: 0px; 
-    margin: 0px;
+    margin: auto;
+}
+
+.wrapper{
+    background-color: variables.$background-color__primary;
+    border-radius: 15px;
+    max-width: 1030px;
+    margin:auto;
+    margin-top: 0;
+
 }
 

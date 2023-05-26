@@ -5,6 +5,7 @@
 .info-text{
     overflow: auto;
     margin: variables.$margin__component;
+    margin-bottom: 0;
 
     &__title{
        
@@ -17,11 +18,10 @@
     }
 
     &__picture{
-        max-width: 150px;
-        border-radius: 30%;
+        max-width: 200px;
+        height: auto;
         margin: 15px;
         float: right;
-        box-shadow: 1px 1px 10px grey;
 
         &--left{
             float: left;
@@ -38,9 +38,8 @@
         &--flex{
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
         justify-content: center;
-        align-items: stretch;
+        align-items: center;
         margin: variables.$margin__component;
         }
 
@@ -52,15 +51,20 @@
             display: flex;
             max-width: 200px;
             flex: 1 0 60%;
+          
+            margin-right: 30px;
+            margin-left: 0;
             object-fit: cover;
 
 
             &--left{
                 display: flex;
                 max-width: 200px;
-                flex: 0 1 50%;
+                flex: 1 0 50%;
                 order: 1;
                 object-fit: cover;
+                margin-right: 0;
+                margin-left: 30px;
             }
         }
 
@@ -189,6 +193,9 @@
         display: grid;
         grid-template-columns: 300px 1fr 1fr;
         grid-template-rows: 50px;
+        width: 700px;
+        justify-content: center;
+        margin: 0;
     }
 
     .button-group__button{
@@ -197,7 +204,7 @@
     }
 
     .dropdown{
-        justify-self: start;
+        justify-self: center;
         margin: 0 15px ;
     }
     .button-group__button{
@@ -211,7 +218,6 @@
 //SEZNAM TÉMAT DISKUZE
 
 .list-links{
-    margin: variables.$margin__component;
     font-weight: bold;
 
     &__heading{
@@ -230,6 +236,12 @@
         font-weight: normal;
         margin: 0;
         padding-right: 10px;
+        &:hover, 
+        &:focus,
+        &:active {
+            color: variables.$primary-color;
+            cursor: pointer;
+        }   
     }
     
     &__number{
@@ -245,12 +257,19 @@
 
 .items-list{
    
-    margin: variables.$margin__component;
+    margin: 50px 0 30px 0;
+    margin-left: 0px;
     margin-top: 50px;
     margin-bottom: 30px;
 
     &__item{
        display: block;
+       &:hover, 
+       &:focus,
+       &:active {
+           background-color: variables.$background-color__body;
+           cursor: pointer;
+       }   
     }
 
     &__title{
@@ -419,23 +438,49 @@
     font-size: variables.$font-size__small;
 }
 
+.page-content{
+    display: block;
+}
+
+.page-content__map{
+    margin: 0 0 0 30px;
+    border: 2px solid variables.$primary-color;
+    max-width: 250px; 
+    max-height: 250px;
+
+}
+
 @include mixins.medium {
     .page-content{
         display: flex;
-        gap: 50px;
+        justify-content: space-between;
+        margin: 0 30px;
     }
 
     .page-content__map{
-        margin: 100px 30px 20px 30px;
+        margin: 120px 0px 0px 30px;
         flex: 1 0 50%;
-
         border: 2px solid variables.$primary-color;
-        max-width: 500px; 
-        max-height: 500px;
+        max-width: 250px; 
+        max-height: 250px;
+        object-fit: cover;
+        &:hover, 
+        &:focus,
+        &:active {
+            cursor: pointer;;
+        }   
     }
 
     .review-section{
-        flex: 0 1 50%;
+        flex: 0 1 40%;
+        margin: 0;
+        width: 650px;
+
+        &__button-group{
+            width: 650px;
+        }
+
+       
     }
        
     }
